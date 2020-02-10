@@ -34,7 +34,7 @@ function win(user, comp) {
     result_p.innerHTML = `${user.capitalize()}${smallUserWord} beats ${comp.capitalize()}${smallCompWord} ! You Won!`
     //added css green glow if user wins
     document.getElementById(user).classList.add('green-glow')
-    setTimeout(function() {  document.getElementById(user).classList.remove('green-glow') }, 1000)
+    setTimeout(function() {  document.getElementById(user).classList.remove('green-glow') }, 500)
 }
 
 function lose(user, comp){
@@ -46,7 +46,7 @@ function lose(user, comp){
     result_p.innerHTML = `${user.capitalize()}${smallUserWord} loses to ${comp.capitalize()}${smallCompWord} ! You Lost!`
     //added css for red glow if loses
     document.getElementById(user).classList.add('red-glow')
-    setTimeout(function() {  document.getElementById(user).classList.remove('red-glow') }, 1000)
+    setTimeout(function() {  document.getElementById(user).classList.remove('red-glow') }, 500)
 }
 
 function tie(user, comp) {
@@ -57,7 +57,7 @@ function tie(user, comp) {
     result_p.innerHTML = `${user.capitalize()}${smallUserWord} equals ${comp.capitalize()}${smallCompWord} ! It's a Draw!`
     //added css for draw glow
     document.getElementById(user).classList.add('grey-glow')
-    setTimeout(function() {  document.getElementById(user).classList.remove('grey-glow') }, 1000)
+    setTimeout(function() {  document.getElementById(user).classList.remove('grey-glow') }, 500)
 }
 
 
